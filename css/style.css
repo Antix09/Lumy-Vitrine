@@ -1,0 +1,514 @@
+/* Lumy Events - 2020 / Antoine Hamard */
+
+/* Font Face */
+@font-face {
+    font-family: 'Amatic SC';
+    src: url("../fonts/AmaticSC-Regular.ttf"),
+    	url('../fonts/amaticsc-regular-webfont.woff') format('woff');
+
+    font-family: 'Josefin Sans';
+    src: url("../fonts/JosefinSans-Regular.ttf");
+}
+
+/* Structure */
+
+	header
+	{
+		background-image: 	linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+							url('../images/pattern.jpg');
+		position: fixed;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 110px;
+	}
+
+	nav
+	{
+		width: 460px;
+		display: flex;
+		justify-content: space-between;
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 1.7em;
+	}
+
+	nav a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	nav a:hover
+	{
+		color: #ec8b5e;
+	}
+
+	body
+	{
+		background-image: url('../images/linen.png');
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	strong
+	{
+		font-weight: bold;
+	}
+
+	aside
+	{
+		margin-left: 20px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	footer
+	{
+		background-color:
+	}
+
+	footer p
+	{
+		text-align: center;
+		font-family: Josefin Sans, Arial, Sans-serif;
+		font-size: 1em;
+	}
+
+	footer p a
+	{
+		text-decoration: none;
+		color: #a39f9f
+	}
+
+	footer p a:hover
+	{
+		color: #141a46;
+	}
+
+/* Titres */
+	#titre_un
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 3em;
+		color: #ec8b5e;
+	}
+
+	h1
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 2.6em;
+		text-align: center;
+		color: #5c6361;
+		padding-top: 120px;
+	}
+
+	h2
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 2.2em;
+		text-align: center;
+		color: #5c6361;
+	}
+
+	h3
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 2em;
+		text-align: center;
+		color: #5c6361;
+	}
+
+	h4
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 1.6em;
+		text-align: center;
+		color: #5c6361;
+	}
+
+	h5
+	{
+		font-family: Amatic SC, Verdana, Sans-serif;
+		font-size: 1.6em;
+		text-align: center;
+		color: #5c6361;
+	}
+
+	hr
+	{
+		width: 100px;
+	}
+
+/* Paragraphes & Listes */
+	p
+	{
+		font-family: Josefin Sans, Arial, Sans-serif;
+		font-size: 1em;
+		line-height: 1.5em;
+		text-align: justify;
+		color: #a39f9f ;
+	}
+
+	li
+	{
+		font-family: Josefin Sans, Arial, Sans-serif;
+		font-size: 1em;
+		line-height: 1.5em;
+		color: #a39f9f ;
+	}
+
+/* Formulaire de contact */
+
+form
+{
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+label
+{
+  font-family: Josefin Sans;
+  font-size: 1em;
+  color: #a39f9f;
+}
+
+input
+{
+  margin: 10px;
+  cursor: pointer;
+  width: 260px;
+  padding: 5px;
+  font-family: Josefin Sans;
+  font-size: 1em;
+}
+
+input[type=submit]
+{
+  background-color: #4CAF50;
+  font-family: Josefin Sans;
+  font-size: 1.1em;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  width: 120px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+textarea
+{
+  margin: 10px;
+  width: 340px;
+  height: 200px;
+  font-family: Josefin Sans;
+  font-size: 1em;
+}
+
+
+/* ID */
+
+#concept_container
+{
+	display: flex;
+}
+
+#logo_mobile
+{
+	display: none;
+}
+
+#nav_mobile
+{
+	display: none;
+}
+
+#texte_concept
+{
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+#valeurs
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#activites
+{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#soireetheme
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+#soireetheme img
+{
+	width: 150px;
+	height: 150px;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 10px 10px 20px #e8e8e8;
+	border-radius: 75px
+}
+
+#soireetheme_bloc
+{
+	width: 460px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#soireetheme_bloc p
+{
+	text-align: center;
+}
+
+#team
+{
+	display: flex;
+}
+
+#leslie
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#thomas
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#leslie img
+{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 20px #e8e8e8;
+	border-radius: 150px;
+}
+
+#thomas img
+{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 20px #e8e8e8;
+	border-radius: 150px;
+}
+
+#texte_contact p
+{
+	text-align: center;
+}
+
+
+/* Classes */
+
+.bloc
+{
+	justify-content: space-between;
+	width: 220px;
+	padding-left: 5px;
+    padding-right: 5px;
+}
+
+.activite
+{
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.activite i
+{
+	font-size: 3rem;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.orange
+{
+	color: #ec8b5e;
+}
+
+.bleu
+{
+	color: #141a46;
+}
+
+
+/* Responsive Design */
+
+/* Tablette Portrait & Landscape */
+	@media only screen and (min-width: 480px) and (max-width: 1024px)
+	{
+		/* Structure */
+		body
+		{
+			width: 80%;
+		}
+
+		/* ID */
+		#valeurs
+		{
+			flex-direction: column;
+			width: auto;
+		}
+
+		#activites
+		{
+			height: auto;
+		}
+
+		#team
+		{
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		#leslie
+		{
+			width: 320px;
+		}
+
+		#thomas
+		{
+			width: 320px;
+		}
+
+		/* Class */
+		.bloc
+		{
+			width: auto;
+		}
+
+		.activite
+		{
+			width: auto;
+		}
+
+		.tablette_out
+		{
+			display: none;
+		}
+	}
+
+
+/* Mobile */
+	@media only screen and (max-width: 480px)
+	{
+		/* Structure */
+		body
+		{
+			width: 80%;
+		}
+
+		nav
+		{
+			width: 100%;
+			justify-content: space-around;
+		}
+
+		/* ID */
+		#header_mobile
+		{
+			display: flex;
+			flex-direction: column;
+			height: 110px;
+			width: 100%;
+			min-width: 430px;
+		}
+
+		#logo_mobile
+		{
+			display: flex;
+		}
+
+		#texte_concept
+		{
+			margin-right: 0px;
+		}
+
+		#valeurs
+		{
+			flex-direction: column;
+		}
+
+		#activites
+		{
+			flex-direction: column;
+			justify-content: center;
+			min-width: 380px;
+			height: auto;
+		}
+
+		#activites p
+		{
+			margin-bottom: 30px;
+		}
+
+		#team
+		{
+			flex-direction: column;
+			justify-content: center;
+			height: auto;
+		}
+
+		#leslie
+		{
+			width: auto;
+		}
+
+		#thomas
+		{
+			width: auto;
+		}
+
+		/* Class */
+		.mobile_out
+		{
+			display: none;
+		}
+
+		.bloc
+		{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.activite
+		{
+			width: 100%;
+		}
+
+	}
